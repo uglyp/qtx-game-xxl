@@ -7,7 +7,7 @@ export default ({ command, mode }) => {
     const root = process.cwd();
     const env = loadEnv(mode, root);
     return {
-        base: './',
+        base: '/',
         define: {
             APP_VERSION: JSON.stringify(process.env.npm_package_version),
         },
