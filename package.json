@@ -1,0 +1,46 @@
+{
+    "name": "match3",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "homepage": "https://uglyp.github.io/qtx-game-xxl",
+    "scripts": {
+        "assets": "assetpack && node postassetpack.js",
+        "dev": "vite --host",
+        "preview": "vite preview",
+        "build": "vite build",
+        "build:prod": "vite build",
+        "build:dev": "vite build --mode=development",
+        "build:test": "vite build --mode=test",
+        "predeploy" : "pnpm run build",
+        "deploy" : "gh-pages -d dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@pixi/graphics": "^7.3.1",
+        "@pixi/sound": "^5.2.0",
+        "@pixi/ui": "0.5.0",
+        "@vitejs/plugin-legacy": "3.0.2",
+        "axios": "^1.4.0",
+        "crypto-js": "^4.2.0",
+        "gsap": "^3.12.2",
+        "pixi-spine": "^4.0.4",
+        "pixi.js": "^7.2.4",
+        "vconsole": "^3.15.1"
+    },
+    "devDependencies": {
+        "@assetpack/cli": "^0.7.0",
+        "@assetpack/core": "^0.7.0",
+        "@assetpack/plugin-compress": "^0.7.0",
+        "@assetpack/plugin-ffmpeg": "^0.7.0",
+        "@assetpack/plugin-json": "^0.7.0",
+        "@assetpack/plugin-manifest": "^0.7.0",
+        "@assetpack/plugin-texture-packer": "^0.7.0",
+        "@assetpack/plugin-webfont": "^0.7.0",
+        "gh-pages": "^6.3.0",
+        "vite": "^4.4.8",
+        "vite-plugin-vconsole": "^1.3.1"
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <title>臻宝消消乐</title>
+    <style>
+      html, body {
+        overflow: hidden !important;
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
+        background-color: 0xffffff;
+        position: fixed;
+      }
+      *{
+        -webkit-touch-callout:none; /*系统默认菜单被禁用*/
+        -webkit-user-select:none; /*webkit浏览器*/
+        -khtml-user-select:none; /*早期浏览器*/
+        -moz-user-select:none;/*火狐*/
+        -ms-user-select:none; /*IE10*/
+        user-select:none;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main"></main>
+    <script>
+        this.globalThis || (this.globalThis = this)
+    </script>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
